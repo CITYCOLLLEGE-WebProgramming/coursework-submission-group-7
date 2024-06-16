@@ -1,0 +1,99 @@
+.profile-page {
+	display: flex;
+	height: 100%;
+  }
+  
+  @media (max-width: 1024px) {
+	.profile-page {
+	  flex-direction: column;
+	  overflow: scroll;
+	}
+  }
+  
+  .profile-details {
+	flex: 3;
+	overflow-y: scroll;
+	padding-bottom: 50px;
+  }
+  
+  @media (max-width: 1024px) {
+	.profile-details {
+	  flex: none;
+	  height: max-content;
+	}
+  }
+  
+  .details-wrapper {
+	padding-right: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+  }
+  
+  .section-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .section-header h1 {
+	font-weight: 300;
+  }
+  
+  .add-avatar-btn,
+  .create-post-btn {
+	padding: 12px 24px;
+	background-color: #006989;
+	color: white;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+  }
+  
+  .user-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  }
+  
+  .info-item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+  }
+  
+  .logout-btn {
+	width: 100px;
+	background-color: teal;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+  }
+  
+  .info-item img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+  }
+  
+  .profile-page {
+	flex: 2;
+	background-color: white;
+	height: 100%;
+  }
+  
+  @media (max-width: 1024px) {
+	.profile-page {
+	  flex: none;
+	  height: max-content;
+	}
+  }
+  
+  .details-wrapper {
+	padding: 0px 20px;
+	height: 100%;
+  }
+  

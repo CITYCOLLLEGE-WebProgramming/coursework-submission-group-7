@@ -1,0 +1,38 @@
+.listPage {
+	display: flex;
+	height: 100%;
+  }
+  .listPage .listSection {
+	flex: 3;
+	height: 100%;
+  }
+  .listPage .listSection .listWrapper {
+	height: 100%;
+	padding-right: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	overflow-y: scroll;
+	padding-bottom: 50px;
+  }
+  .listPage .mapSection {
+	flex: 2;
+	height: 100%;
+	background-color: #fcf5f3;
+  }
+  @media (max-width: 1024px) {
+	.listPage .mapSection {
+	  display: none;
+	}
+  }
+  .pagination-button{
+	width: 100px;
+      padding: 15px;
+      background-color: #006989;
+	  color: white;
+      border: none;
+      cursor: pointer;
+  }
+  .pagination-button:first-of-type {
+	margin-right: 10px; /* Adjust the value as needed */
+}
